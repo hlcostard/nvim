@@ -14,6 +14,8 @@ return {
     },
 
     config = function()
+        vim.filetype.add({ extension = { templ = "templ" } })
+
         require("fidget").setup({})
         require("mason").setup()
 
